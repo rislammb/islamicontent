@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 30px;
+  background-color: #f1f1f1;
+}
+
+header {
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(0, 174, 255);
+  background-color: #dfdfdf;
+}
+
+nav {
+  background-color: #dfdfdf;
+  text-align: center;
+}
+table {
+  overflow: hidden;
+  margin: auto;
+  padding: 3px 0;
+}
+table td a {
+  color: rgb(0, 167, 14);
+  display: block;
+  border: 2px solid rgb(0, 167, 14);
+  border-radius: 25px;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-weight: bold;
+}
+a.active {
+  background-color: rgb(0, 167, 14);
+  color: white;
+  border: 2px solid rgb(0, 167, 14);
+}
+table td a:hover:not(.active) {
+  color: rgb(255, 102, 0);
+  border: 2px solid rgb(255, 102, 0);
+}
+
+
+
+.leftcolumn {
+  float: left;
+  width: 70%;
+}
+.card h2 {
+  padding: 10px 0;
+  color: dodgerblue;
+  text-align: center;
+}
+.leftcolumn h5 {
+  padding: 7px 0;
+}
+.leftcolumn p {
+  padding: 7px 0;
+}
+
+.rightcolumn {
+  float: left;
+  width: 30%;
+  padding-left: 20px;
+}
+.rightcolumn h2, h3 {
+  padding: 8px 0;
+  color: rgb(255, 94, 0);
+}
+.rightcolumn p {
+  padding: 5px 0;
+}
+.image img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 3px;
+}
+.image p {
+  text-align: center;
+}
+a.popular {
+  text-decoration: none;
+  color: rgb(214, 0, 168);
+}
+a.popular:hover {
+  color: dodgerblue;
+  opacity: 0.8;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+span.hadis {
+  color: rgb(156, 0, 156);
+  font-weight: bold;
+}
+p.right {
+  text-align: right;
+  color: rgb(0, 153, 25);
+}
+
+
+.gallery {
+  color: rgb(84, 1, 109);
+  background-color: #fff;
+  border: 1px solid #777;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 10px;
+  border-top: none;
+}
+.responsive .left {
+  margin-right: 10px;
+}
+.responsive .right {
+  margin-left: 10px;
+}
+.responsive {
+  float: left;
+  background-color: #f1f1f1;
+  width: 49.999999%;
+  margin-top: 20px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.follow a {
+  color: dodgerblue;
+  text-decoration: none;
+  display: block;
+  padding: 7px;
+  background-color: #f1f1f1;
+  margin-top: 3px;
+}
+.follow a:hover {
+  color: white;
+  background-color: dodgerblue;
+}
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #dfdfdf;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    padding: 10px;
+  }
+  table td a {
+    padding: 10px 9px;
+  }
+  .rightcolumn {
+    padding-left: 10px;
+  }
+  .card {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .responsive {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .responsive .left {
+    margin-right: 0;
+  }
+  .responsive .right {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    padding: 5px;
+  }
+  table {
+    width: 100%;
+  }
+  table td {
+    display: block;
+    margin: 2px 0;
+  }
+  .leftcolumn, .rightcolumn {
+    float: none;
+    width: 100%;
+  }
+  .rightcolumn {
+    padding-left: 0;
+  }
+}
